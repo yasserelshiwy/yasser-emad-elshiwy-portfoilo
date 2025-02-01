@@ -1,9 +1,10 @@
 import Main from "./components/3-Main/Main";
 import Header from "./components/1-Header/Header";
 import Hero from "./components/2-Hero/Hero";
-import ContactUs from "./components/4-ContactUs/ContactUs";
-import Footer from "./components/5-Footer/Footer";
+import ContactUs from "./components/5-ContactUs/ContactUs";
+import Footer from "./components/6-Footer/Footer";
 import { useEffect, useState } from "react";
+import Skils from "./components/4-Skils/Skils";
 
 export default function App() {
   const [showScroll, setShowScroll] = useState("opacity-0");
@@ -33,6 +34,8 @@ export default function App() {
           <Hero />
 
           <Main />
+
+          <Skils />
 
           <ContactUs />
 

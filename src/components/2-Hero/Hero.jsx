@@ -1,4 +1,4 @@
-import profile from "../../assts/img/prtofoilophotot-modified.png";
+import profile from "../../assts/img/yasser-modified.png";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import Lottie from "lottie-react";
 import lap from "../../../public/anmition/laptop.json";

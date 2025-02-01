@@ -18,7 +18,10 @@ export default function Main() {
   const filrerProjects = (category) => {
     setActiveButon(category);
     const newAray = myProjects.filter((items) => {
-      return items.Category === category;
+      const newCateg = items.Category.find((cate) => {
+        return cate === category;
+      });
+      return newCateg === category;
     });
     setProjects(newAray);
   };
@@ -44,15 +47,28 @@ export default function Main() {
           </button>
           <button
             onClick={() => {
-              filrerProjects("Html&Css");
+              filrerProjects("css");
             }}
             className={
-              activeButon === "Html&Css"
+              activeButon === "css"
                 ? " active py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold  hover:opacity-100 md:text-[16px] "
                 : " py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold hover:opacity-100 md:text-[16px] "
             }
           >
             Html & Css
+          </button>
+          <button
+            onClick={() => {
+              filrerProjects("BootStrap");
+            }}
+            className={
+              activeButon === "BootStrap"
+                ? " active py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold  hover:opacity-100 md:text-[16px] "
+                : " py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold hover:opacity-100 md:text-[16px] "
+            }
+          >
+            {" "}
+            BootStrap
           </button>
           <button
             onClick={() => {
@@ -68,30 +84,56 @@ export default function Main() {
           </button>
           <button
             onClick={() => {
-              filrerProjects("React&Tailwind");
+              filrerProjects("Tailwind");
             }}
             className={
-              activeButon === "React&Tailwind"
+              activeButon === "Tailwind"
                 ? " active py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold  hover:opacity-100 md:text-[16px] "
                 : " py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold hover:opacity-100 md:text-[16px] "
             }
           >
-            {" "}
-            React & Tailwind
+            Tailwind
           </button>
           <button
             onClick={() => {
-              filrerProjects("Next&&MUI");
+              filrerProjects("React");
             }}
             className={
-              activeButon === "Next&&MUI"
+              activeButon === "React"
                 ? " active py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold  hover:opacity-100 md:text-[16px] "
                 : " py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold hover:opacity-100 md:text-[16px] "
             }
           >
             {" "}
-            Next && MUI
+            React.js
           </button>
+          <button
+            onClick={() => {
+              filrerProjects("Next");
+            }}
+            className={
+              activeButon === "Next"
+                ? " active py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold  hover:opacity-100 md:text-[16px] "
+                : " py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold hover:opacity-100 md:text-[16px] "
+            }
+          >
+            {" "}
+            Next.js
+          </button>
+          <button
+            onClick={() => {
+              filrerProjects("MUI");
+            }}
+            className={
+              activeButon === "MUI"
+                ? " active py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold  hover:opacity-100 md:text-[16px] "
+                : " py-2  px-4 ml-2 bg-[#fafafa] dark:bg-[#252529] text-black dark:text-gray-300 rounded-sm text-[9px] sm:text-[11px] cursor-pointer opacity-60 transition-all duration-300 hover:font-bold hover:opacity-100 md:text-[16px] "
+            }
+          >
+            {" "}
+            MaterialUI
+          </button>
+
           <div />
         </section>
         <section className="  w-[100%] md:w-[82%] flex  justify-center  flex-wrap  gap-6  lg-px-4 ">

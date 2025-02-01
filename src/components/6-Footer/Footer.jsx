@@ -1,4 +1,4 @@
-import profile from "../../assts/img/prtofoilophotot-modified.png";
+import profile from "../../assts/img/yasser-modified.png";
 
 export default function Footer() {
   return (

@@ -1,0 +1,68 @@
+// @ts-ignore
+import html from "../../assts/img/HTML5.png";
+import css from "../../assts/img/CSS3.png";
+import js from "../../assts/img/JavaScript.png";
+import bootstrap from "../../assts/img/Bootstrap.png";
+import react from "../../assts/img/React.png";
+import tailwind from "../../assts/img/Tailwind CSS.png";
+import next from "../../assts/img/Next.js.png";
+import ts from "../../assts/img/TypeScript.png";
+
+import MUI from "../../assts/img/Material UI.png";
+
+export default function Skils() {
+  return (
+    <>
+      <section
+        id="Skills"
+        className=" py-4 pb-8 px-4 border-b dark:border-gray-600 text-black dark:text-gray-300"
+      >
+        <h2 className=" mb-7 font-bold text-black dark:text-white text-2xl">
+          <i className="fa-solid fa-caret-right"></i> Technical Skills
+        </h2>
+        <div className="flex  justify-between flex-wrap gap-5 md:justify-center lg:justify-between md:px-6 ">
+          <div className="flex flex-col items-center justify-center gap-1  hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+            <img src={html} className="w-9" alt="" />
+            <p>Html</p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+            <img src={css} className="w-9" alt="" />
+            <p>css</p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+            <img src={bootstrap} className="w-9" alt="" />
+            <p>Bootstrap </p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+            <img src={js} className="w-9" alt="" />
+            <p>Java script</p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+            <img src={tailwind} className="w-9" alt="" />
+            <p>Tailwind</p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+            <img src={react} className="w-9" alt="" />
+            <p>Reactjs</p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100 ">
+            <img
+              src={next}
+              className="w-9 border-2 rounded-full bg-gray-100"
+              alt=""
+            />
+            <p>Nextjs</p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+            <img src={ts} className="w-9" alt="" />
+            <p>typescript</p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100 ">
+            <img src={MUI} className="w-9" alt="" />
+            <p>MUI</p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

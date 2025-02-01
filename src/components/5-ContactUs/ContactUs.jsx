@@ -8,7 +8,7 @@ export default function ContactUs() {
 
   return (
     <>
-      <section id="contant" className="py-4">
+      <section id="contant" className="py-6">
         <div className="px-3">
           <h2 className=" text-3xl mb-4 font-bold ">
             <i className="fa-solid fa-envelope text-gray-700 dark:text-gray-300"></i>{" "}
@@ -33,9 +33,9 @@ export default function ContactUs() {
               <div className="flex  flex-col  md:flex-row content-start items-start md:items-center gap-4 text-black dark:text-gray-300">
                 <label
                   htmlFor="email "
-                  className="text-lg md:text-sm lg:text-lg"
+                  className="md:ml-6  text-lg md:text-sm lg:text-lg"
                 >
-                  Email Adress :
+                  Your Email :
                 </label>
                 <input
                   autoComplete="off"
@@ -43,7 +43,7 @@ export default function ContactUs() {
                   name="email"
                   id="email"
                   placeholder="Email Adress"
-                  className=" md:ml-2 p-2  border-2 border-blue-200 shadow-blue-200 dark:shadow-gray-700  shadow-lg rounded-md  w-full md:w-[65%] md:flex-row items-center gap-4 text-black dark:text-gray-300 dark:border-gray-600 dark:bg-[#252529] bg-[#fafafa] focus:border focus:border-blue-400 dark:focus:border-blue-600 outline-none focus:shadow-sm focus:shadow-blue-200 "
+                  className=" p-2 md:ml-1  border-2 border-blue-200 shadow-blue-200 dark:shadow-gray-700  shadow-lg rounded-md  w-full md:w-[65%] md:flex-row items-center gap-4 text-black dark:text-gray-300 dark:border-gray-600 dark:bg-[#252529] bg-[#fafafa] focus:border focus:border-blue-400 dark:focus:border-blue-600 outline-none focus:shadow-sm focus:shadow-blue-200 "
                 />
                 <ValidationError
                   prefix="Email"

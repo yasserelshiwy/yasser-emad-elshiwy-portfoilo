@@ -70,10 +70,10 @@ export default function Header() {
               </li>
               <li className=" relative transition-all duration-200 group hover:-translate-y-0.5 ">
                 <a
-                  href="#contant"
+                  href="#Skills"
                   className="text-gray-900 font-bold dark:font-medium dark:text-white opacity-90 group-hover:font-bold transition-all duration-300   group-hover:text-blue-600 dark:group-hover:text-blue-400"
                 >
-                  Speeking
+                  Skills
                 </a>
               </li>
               <li className=" relative transition-all duration-200 group hover:-translate-y-0.5 ">
@@ -81,7 +81,7 @@ export default function Header() {
                   href="#contant"
                   className="text-gray-900 font-bold dark:font-medium dark:text-white opacity-90 group-hover:font-bold  transition-all duration-300  group-hover:text-blue-600 dark:group-hover:text-blue-400"
                 >
-                  contant
+                  Contact
                 </a>
               </li>
             </ul>
@@ -128,10 +128,10 @@ export default function Header() {
                 </li>
                 <li className=" relative transition-all duration-200 hover:-translate-y-0.5 pb-3 pt-2 group  border-b-[1px]  border-[#232326] mb-1">
                   <a
-                    href="#contant"
+                    href="#Skills"
                     className="text-gray-900 font-bold dark:font-medium dark:text-white opacity-90 group-hover:font-bold transition-all duration-300 text-lg   group-hover:text-blue-600 dark:group-hover:text-blue-400"
                   >
-                    Speeking
+                    Skills
                   </a>
                 </li>
                 <li className=" relative transition-all duration-200 hover:-translate-y-0.5 pb-1 pt-2 group   mb-1">
@@ -139,7 +139,7 @@ export default function Header() {
                     href="#contant"
                     className="text-gray-900 font-bold dark:font-medium dark:text-white opacity-90 group-hover:font-bold  transition-all duration-300 text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400"
                   >
-                    contant
+                    Contact
                   </a>
                 </li>
               </ul>

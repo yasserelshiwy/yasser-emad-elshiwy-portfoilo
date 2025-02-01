@@ -1,17 +1,27 @@
 export const myProjects = [
   {
     titel: "Freash Care",
-    Category: "React&Tailwind",
+    Category: ["React", "Tailwind"],
     image: "/img/freashcart0.png",
     liveDemo: "https://fresh-cart-e-commers.vercel.app",
     gitHubLink: "https://github.com/yasserelshiwy/freshCart",
     discription:
-      "This project is an online store used in react js, tailwindcss, and it displays products. The user can create an account, browse the site, and place products in the shopping cart or in the wish list. He can buy a product by paying online or upon delivery. It displays the orders he requested and the products are divided according to their type to facilitate the user's access to a specific product and its details. He can browse within specific products according to categories.",
+      "This project is an e-commerce used in react js, tailwindcss, and it displays products. The user can create an account, browse the site, and place products in the shopping cart or in the wish list. He can buy a product by paying online or upon delivery. It displays the orders he requested and the products are divided according to their type to facilitate the user's access to a specific product and its details. He can browse within specific products according to categories.",
+    id: "1",
+  },
+  {
+    titel: "Dashboard",
+    Category: ["React", "MUI"],
+    image: "/img/Dashboard.png",
+    liveDemo: "https://dashboard-beige-two-74.vercel.app/",
+    gitHubLink: "https://github.com/yasserelshiwy/Dashboard",
+    discription:
+      "Dashboard management using react.js and Mui and organizing it between workers, users and management. It is divided into multiple sections to follow the work team, follow up on contacts, manage invoices, create an account according to your role in the organization, and databases for data analysis.",
     id: "1",
   },
   {
     titel: "YUMMY",
-    Category: "JavaScript",
+    Category: ["JavaScript", "BootStrap"],
     image: "/img/YUMMY.png",
     liveDemo: "https://yasserelshiwy.github.io/YUMMY/",
     gitHubLink: "https://github.com/yasserelshiwy/YUMMY",
@@ -21,7 +31,7 @@ export const myProjects = [
   },
   {
     titel: "Laindwind",
-    Category: "Html&Css",
+    Category: ["Tailwind", "css"],
     image: "/img/landwind.png",
     liveDemo: "https://landwind-six.vercel.app/",
     gitHubLink: "https://github.com/yasserelshiwy/Landwind",
@@ -31,7 +41,7 @@ export const myProjects = [
   },
   {
     titel: "Bookmarker",
-    Category: "JavaScript",
+    Category: ["JavaScript", "BootStrap"],
     image: "/img/Bookmarker.png",
     liveDemo: "https://yasserelshiwy.github.io/book-market-stitic/",
     gitHubLink: "https://github.com/yasserelshiwy/book-market-stitic",
@@ -41,7 +51,7 @@ export const myProjects = [
   },
   {
     titel: "Daniels",
-    Category: "Html&Css",
+    Category: ["BootStrap", "css"],
     image: "/img/Daniels.png",
     liveDemo: "https://yasserelshiwy.github.io/Daniels/",
     gitHubLink: "https://github.com/yasserelshiwy/Daniels",
@@ -51,7 +61,7 @@ export const myProjects = [
   },
   {
     titel: "Egyption Party",
-    Category: "JavaScript",
+    Category: ["JavaScript", "BootStrap", "css"],
     image: "/img/Egyption Party.png",
     liveDemo: "https://yasserelshiwy.github.io/Egyption-party1-/",
     gitHubLink: "https://github.com/yasserelshiwy/Egyption-party1-",
@@ -61,7 +71,7 @@ export const myProjects = [
   },
   {
     titel: "Note App",
-    Category: "React&Tailwind",
+    Category: ["React", "BootStrap"],
     image: "img/noteapp.png",
     liveDemo: "https://note-app-pi-azure.vercel.app",
     gitHubLink: "https://github.com/yasserelshiwy/Note-App",
@@ -71,7 +81,7 @@ export const myProjects = [
   },
   {
     titel: "Smart Login",
-    Category: "JavaScript",
+    Category: ["JavaScript", "BootStrap"],
     image: "/img/Smart Login.png",
     liveDemo: "https://yasserelshiwy.github.io/smart-login/",
     gitHubLink: "https://github.com/yasserelshiwy/smart-login",
@@ -81,7 +91,7 @@ export const myProjects = [
   },
   {
     titel: "DevFolio",
-    Category: "Html&Css",
+    Category: ["BootStrap", "css"],
     image: "/img/DevFolio.png",
     liveDemo: "https://yasserelshiwy.github.io/devfolo/",
     gitHubLink: "https://github.com/yasserelshiwy/devfolo",
@@ -91,7 +101,7 @@ export const myProjects = [
   },
   {
     titel: "Fokir",
-    Category: "Html&Css",
+    Category: ["css"],
     image: "/img/fokir.png",
     liveDemo: "https://yasserelshiwy.github.io/Fokir/",
     gitHubLink: "https://github.com/yasserelshiwy/Fokir",
@@ -100,8 +110,8 @@ export const myProjects = [
     id: "11",
   },
   {
-    titel: "Fokir",
-    Category: "Html&Css",
+    titel: "Mealify",
+    Category: ["css"],
     image: "/img/Mealify.png",
     liveDemo: "https://yasserelshiwy.github.io/Mealify/",
     gitHubLink: "https://github.com/yasserelshiwy/Mealify",
@@ -111,7 +121,7 @@ export const myProjects = [
   },
   {
     titel: "Social App",
-    Category: "Next&&MUI",
+    Category: ["Next", "MUI"],
     image: "/img/Social App.png",
     liveDemo: "https://social-app-zc9p.vercel.app",
     gitHubLink: "https://github.com/yasserelshiwy/Social_App",
