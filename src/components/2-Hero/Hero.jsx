@@ -1,9 +1,30 @@
+// @ts-nocheck
 import profile from "../../assts/img/yasser-modified.png";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import Lottie from "lottie-react";
 import lap from "../../../public/anmition/laptop.json";
 import { motion } from "framer-motion";
 export default function Hero() {
+  const tital = `Front-End  Web Developer`;
+  const hvariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  const spanvariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+  };
   return (
     <>
       <section className="hero flex  items-center pt-14 px-0 md:px-16 ">
@@ -22,12 +43,22 @@ export default function Hero() {
             </div>
           </div>
           <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-            className="mt-10  mb-5 text-3xl md:text-4xl font-bold text-black dark:text-white"
+           
+            variants={hvariant}
+            initial="hidden"
+            animate="visible"
+            className="mt-10  mb-5 sm:text-3xl text-2xl md:text-4xl font-bold text-black dark:text-white"
           >
-            Front-End Web Developer
+            {tital.split("").map((char, index) => (
+              <motion.span
+                
+                variants={spanvariant}
+                key={index}
+              >
+                
+                {char}
+              </motion.span>
+            ))}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}

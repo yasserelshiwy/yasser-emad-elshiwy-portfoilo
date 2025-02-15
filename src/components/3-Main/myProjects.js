@@ -10,6 +10,16 @@ export const myProjects = [
     id: "1",
   },
   {
+    titel: "Market App",
+    Category: ["React", "MUI"],
+    image: "img/market app.png",
+    liveDemo: "https://e-commerce1-market-app.vercel.app/",
+    gitHubLink: "https://github.com/yasserelshiwy/e-commerce1-Market-App",
+    discription:
+      "The e-commerce application was created using react.js and MUI. It is responsive to all chats. Through it, you can buy available products, shop, add them to the shopping cart, and save them in the favorites to buy them at a later time. You can also browse products according to their category.",
+    id: "2",
+  },
+  {
     titel: "Dashboard",
     Category: ["React", "MUI"],
     image: "/img/Dashboard.png",
@@ -17,7 +27,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/Dashboard",
     discription:
       "Dashboard management using react.js and Mui and organizing it between workers, users and management. It is divided into multiple sections to follow the work team, follow up on contacts, manage invoices, create an account according to your role in the organization, and databases for data analysis.",
-    id: "1",
+    id: "3",
   },
   {
     titel: "YUMMY",
@@ -27,7 +37,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/YUMMY",
     discription:
       "•This is a site that contains all the famous foods around the world and it displays them in a simple and smooth way. You can filter the foods according to the country and you can search for the food using the first letter of it or the whole word. The food details are displayed. It is built using JavaScript and Botstrap. It is considered a single-page site using DOM, so there is no loading of pages or its data, so it is easy for the user to use. ",
-    id: "2",
+    id: "4",
   },
   {
     titel: "Laindwind",
@@ -37,7 +47,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/Landwind",
     discription:
       "Landwind is a page for Building digital products & brands. It is made using Tailwand and supports dark mode feature which enables it to support all media and screens big and small.",
-    id: "3",
+    id: "5",
   },
   {
     titel: "Bookmarker",
@@ -47,7 +57,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/book-market-stitic",
     discription:
       "Bookmarker is a library that uses JavaScript and a bootstrap. You can save the books you need to read in it and you can delete them after reading them. It supports all media.",
-    id: "4",
+    id: "6",
   },
   {
     titel: "Daniels",
@@ -57,7 +67,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/Daniels",
     discription:
       "Daniels is a landing page with bootstrap that represents the portfolio of a UI/UX Designer & Web Developer and it accepts all media.",
-    id: "9",
+    id: "7",
   },
   {
     titel: "Egyption Party",
@@ -67,7 +77,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/Egyption-party1-",
     discription:
       "Egyptian Party is an invitation to a party using jQuery, bootstrap. It is a landing page that calculates the number of days remaining until the party day.",
-    id: "5",
+    id: "8",
   },
   {
     titel: "Note App",
@@ -77,7 +87,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/Note-App",
     discription:
       "This project is a site for recording daily notes. The user can create his own account and save notes on it safely. The site is built entirely with react and tailwind with some libraries such as react-awesome-reveal and others. ",
-    id: "6",
+    id: "9",
   },
   {
     titel: "Smart Login",
@@ -87,7 +97,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/smart-login",
     discription:
       "Smart Login is an app used in JavaScript and boot strap to test the validation. The user can create an account and log in to his main page, taking into account the instructions.",
-    id: "7",
+    id: "10",
   },
   {
     titel: "DevFolio",
@@ -97,7 +107,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/devfolo",
     discription:
       "DevFolio is a landing page using Bootstrap that is a portfolio for full stack developer UX and web developer and accepts all media.",
-    id: "10",
+    id: "11",
   },
   {
     titel: "Fokir",
@@ -107,7 +117,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/Fokir",
     discription:
       "Fokir is a landing page using css that represents a portfolio for UI/UX Designer, UX and Web Developer and accepts all media.",
-    id: "11",
+    id: "12",
   },
   {
     titel: "Mealify",
@@ -117,7 +127,7 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/Mealify",
     discription:
       "Mealify is a landing page using CSS that represents a portfolio for a restaurant that offers healthy meals. It supports darkmode using CSS only, has CSS animation, and accepts all media.",
-    id: "12",
+    id: "13",
   },
   {
     titel: "Social App",
@@ -127,6 +137,6 @@ export const myProjects = [
     gitHubLink: "https://github.com/yasserelshiwy/Social_App",
     discription:
       "This project is similar to a social media app and is used in NextTs and Type Script, MUI, and through it the user can create an account and log in and all the posts are shown to others and he can create a post and edit it and put a comment and edit it and he can delete them and put a personal photo and there is a page to display his personal information and it is a profile and he can change his password ",
-    id: "8",
+    id: "14",
   },
 ];

@@ -1,3 +1,4 @@
+// @ts-nocheck
 // @ts-ignore
 import html from "../../assts/img/HTML5.png";
 import css from "../../assts/img/CSS3.png";
@@ -7,8 +8,10 @@ import react from "../../assts/img/React.png";
 import tailwind from "../../assts/img/Tailwind CSS.png";
 import next from "../../assts/img/Next.js.png";
 import ts from "../../assts/img/TypeScript.png";
-
+import "swiper/css";
 import MUI from "../../assts/img/Material UI.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperNavButton } from "./SwiperNavButton";
 
 export default function Skils() {
   return (
@@ -20,7 +23,91 @@ export default function Skils() {
         <h2 className=" mb-7 font-bold text-black dark:text-white text-2xl">
           <i className="fa-solid fa-caret-right"></i> Technical Skills
         </h2>
-        <div className="flex  justify-between flex-wrap gap-5 md:justify-center lg:justify-between md:px-6 ">
+        <Swiper
+          breakpoints={{
+            0: { slidesPerView: 2, spaceBetween: 5 },
+            640: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 6,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 8,
+              spaceBetween: 20,
+            },
+          }}
+          loop={true}
+          keyboard={{ enabled: true }}
+          className=""
+        >
+          <SwiperNavButton />
+          <SwiperSlide>
+            {" "}
+            <div className="flex flex-col items-center justify-center gap-1  hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+              <img src={html} className="w-9" alt="" />
+              <p>Html</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+              <img src={css} className="w-9" alt="" />
+              <p>css</p>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+              <img src={bootstrap} className="w-9" alt="" />
+              <p>Bootstrap </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+              <img src={js} className="w-9" alt="" />
+              <p>Java script</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+              <img src={tailwind} className="w-9" alt="" />
+              <p>Tailwind</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+              <img src={react} className="w-9" alt="" />
+              <p>Reactjs</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100 ">
+              <img
+                src={next}
+                className="w-9 border-2 rounded-full bg-gray-100"
+                alt=""
+              />
+              <p>Nextjs</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
+              <img src={ts} className="w-9" alt="" />
+              <p>typescript</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100 ">
+              <img src={MUI} className="w-9" alt="" />
+              <p>MUI</p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        {/* <div className="flex  justify-between flex-wrap gap-5 md:justify-center lg:justify-between md:px-6 ">
           <div className="flex flex-col items-center justify-center gap-1  hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
             <img src={html} className="w-9" alt="" />
             <p>Html</p>
@@ -61,7 +148,7 @@ export default function Skils() {
             <img src={MUI} className="w-9" alt="" />
             <p>MUI</p>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
