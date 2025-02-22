@@ -33,7 +33,7 @@ export default function Header() {
       setIconMoodColoer("text-gray-600");
     }
   }, []);
-  
+
   return (
     <>
       <header
@@ -104,9 +104,9 @@ export default function Header() {
                     setShowModul(false);
                     setShowNav(true);
                   }}
-                  className=" cursor-pointer group hover:rotate-180  duration-700 font-extrabolds  transition-all "
+                  className=" cursor-pointer group hover:rotate-180  duration-700 font-medium   transition-all "
                 >
-                  <i className="fa-solid fa-x group-hover:text-red-600  duration-300 transition-colors "></i>
+                  <i className="fa-solid fa-x group-hover:text-red-600  duration-300    transition-colors "></i>
                 </button>
               </div>
               <ul>

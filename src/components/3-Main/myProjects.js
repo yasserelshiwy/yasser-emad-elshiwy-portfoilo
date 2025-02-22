@@ -16,7 +16,7 @@ export const myProjects = [
     liveDemo: "https://e-commerce1-market-app.vercel.app/",
     gitHubLink: "https://github.com/yasserelshiwy/e-commerce1-Market-App",
     discription:
-      "The e-commerce application was created using react.js and MUI. It is responsive to all chats. Through it, you can buy available products, shop, add them to the shopping cart, and save them in the favorites to buy them at a later time. You can also browse products according to their category.",
+      "The e-commerce application was created using react.js and MUI. It responds to all screens. Through it, you can buy available products, shop, add them to the shopping cart, and save them in the favorites to buy them at a later time. You can also browse products according to their category.",
     id: "2",
   },
   {

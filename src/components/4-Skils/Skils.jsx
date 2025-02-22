@@ -12,6 +12,8 @@ import "swiper/css";
 import MUI from "../../assts/img/Material UI.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperNavButton } from "./SwiperNavButton";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
 
 export default function Skils() {
   return (
@@ -28,7 +30,7 @@ export default function Skils() {
             0: { slidesPerView: 2, spaceBetween: 5 },
             640: {
               slidesPerView: 4,
-              spaceBetween: 10,
+              spaceBetween: 8,
             },
             768: {
               slidesPerView: 6,
@@ -36,14 +38,23 @@ export default function Skils() {
             },
             1024: {
               slidesPerView: 8,
-              spaceBetween: 20,
+              spaceBetween: 15,
             },
           }}
+        
+            slidesPerView={"auto"}
+            centeredSlides={true}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
+            
+            modules={[Autoplay ]}
           loop={true}
           keyboard={{ enabled: true }}
           className=""
         >
-          <SwiperNavButton />
+          {/* <SwiperNavButton /> */}
           <SwiperSlide>
             {" "}
             <div className="flex flex-col items-center justify-center gap-1  hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
@@ -107,48 +118,7 @@ export default function Skils() {
             </div>
           </SwiperSlide>
         </Swiper>
-        {/* <div className="flex  justify-between flex-wrap gap-5 md:justify-center lg:justify-between md:px-6 ">
-          <div className="flex flex-col items-center justify-center gap-1  hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
-            <img src={html} className="w-9" alt="" />
-            <p>Html</p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
-            <img src={css} className="w-9" alt="" />
-            <p>css</p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
-            <img src={bootstrap} className="w-9" alt="" />
-            <p>Bootstrap </p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
-            <img src={js} className="w-9" alt="" />
-            <p>Java script</p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
-            <img src={tailwind} className="w-9" alt="" />
-            <p>Tailwind</p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
-            <img src={react} className="w-9" alt="" />
-            <p>Reactjs</p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100 ">
-            <img
-              src={next}
-              className="w-9 border-2 rounded-full bg-gray-100"
-              alt=""
-            />
-            <p>Nextjs</p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100">
-            <img src={ts} className="w-9" alt="" />
-            <p>typescript</p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-1 hover:scale-110 transition-all duration-300 opacity-85 hover:opacity-100 ">
-            <img src={MUI} className="w-9" alt="" />
-            <p>MUI</p>
-          </div>
-        </div> */}
+        
       </section>
     </>
   );
