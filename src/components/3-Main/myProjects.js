@@ -39,6 +39,7 @@ export const myProjects = [
       "•This is a site that contains all the famous foods around the world and it displays them in a simple and smooth way. You can filter the foods according to the country and you can search for the food using the first letter of it or the whole word. The food details are displayed. It is built using JavaScript and Botstrap. It is considered a single-page site using DOM, so there is no loading of pages or its data, so it is easy for the user to use. ",
     id: "4",
   },
+
   {
     titel: "Laindwind",
     Category: ["Tailwind", "css"],
@@ -138,5 +139,25 @@ export const myProjects = [
     discription:
       "This project is similar to a social media app and is used in NextTs and Type Script, MUI, and through it the user can create an account and log in and all the posts are shown to others and he can create a post and edit it and put a comment and edit it and he can delete them and put a personal photo and there is a page to display his personal information and it is a profile and he can change his password ",
     id: "14",
+  },
+    {
+    titel: "Product Management ",
+    Category: ["JavaScript", "BootStrap"],
+    image: "/img/crud.png",
+    liveDemo: "https://yasserelshiwy.github.io/CRUD-Project/",
+    gitHubLink: "https://github.com/yasserelshiwy/CRUD-Project",
+    discription:
+      "•The Product Management Project is a CRUD application that aims to provide a simple and flexible interface for managing product listings in any store or point of sale system. The application allows users to add new products, view all available products, edit product details, and delete unwanted products. ",
+    id: "15",
+  },
+     {
+    titel: " ERC-RCOG",
+    Category: ["JavaScript","css"],
+    image: "/img/ERC-RCOG.png",
+    liveDemo: "https://task-erc-rcog.vercel.app/",
+    gitHubLink: "https://github.com/yasserelshiwy/ERC-RCOG-Task",
+    discription:
+      "ERC-RCOG offers high-quality training courses in obstetrics and gynecology, providing healthcare professionals with essential skills and certifications. Enhance your medical expertise with expert-led courses.",
+    id: "16",
   },
 ];
