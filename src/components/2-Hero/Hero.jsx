@@ -71,7 +71,7 @@ export default function Hero() {
             Front-End Web Developer , transforming ideas into{" "}
             <span className="text-red-400 ">Digital Reality</span>
           </motion.p>
-          <div className="flex items-center gap-5 my-5 text-2xl dark:text-gray-300 ">
+          {/* <div className="flex items-center gap-5 my-5 text-2xl dark:text-gray-300 ">
             <a
               href="https://api.whatsapp.com/send/?phone=2001275962106&text=Welcome+to+Yasser+El-shiwy%2C+front-end+developer&type=phone_number&app_absent=0"
               target="_blank"
@@ -107,7 +107,7 @@ export default function Hero() {
             >
               <i className="fa-brands fa-linkedin"></i>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className=" hidden xl:block">
           <Lottie className=" h-[410px] " animationData={lap} />
